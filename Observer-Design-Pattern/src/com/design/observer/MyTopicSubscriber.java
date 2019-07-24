@@ -7,7 +7,7 @@ public class MyTopicSubscriber implements Observer {
 	private Subject topic;
 	
 	public MyTopicSubscriber(String nm){
-		this.name=nm;
+		this.name = nm;
 	}
 	
 	@Override
@@ -22,7 +22,7 @@ public class MyTopicSubscriber implements Observer {
 
 	@Override
 	public void setSubject(Subject sub) {
-		this.topic=sub;
+		this.topic = sub;
 	}
 
 }

@@ -8,9 +8,9 @@ public class ObserverPatternTest {
 		MyTopic topic = new MyTopic();
 		
 		//create observers
-		Observer obj1 = new MyTopicSubscriber("Obj1");
-		Observer obj2 = new MyTopicSubscriber("Obj2");
-		Observer obj3 = new MyTopicSubscriber("Obj3");
+		Observer obj1 = new MyTopicSubscriber("Obj01");
+		Observer obj2 = new MyTopicSubscriber("Obj02");
+		Observer obj3 = new MyTopicSubscriber("Obj03");
 		
 		//register observers to the subject
 		topic.register(obj1);
