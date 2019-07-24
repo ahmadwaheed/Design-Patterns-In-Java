@@ -8,8 +8,8 @@ public class Item {
 	
 	public Item(String upc, int cost){
 		
-		this.upcCode=upc;
-		this.price=cost;
+		this.upcCode = upc;
+		this.price = cost;
 	}
 
 	public String getUpcCode() {

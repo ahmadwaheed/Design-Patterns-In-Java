@@ -11,7 +11,7 @@ public class ShoppingCart {
 	List<Item> items;
 	
 	public ShoppingCart(){
-		this.items=new ArrayList<Item>();
+		this.items = new ArrayList<Item>();
 	}
 	
 	public void addItem(Item item){
@@ -23,7 +23,9 @@ public class ShoppingCart {
 	}
 	
 	public int calculateTotal(){
+		
 		int sum = 0;
+		
 		for(Item item : items){
 			sum += item.getPrice();
 		}
@@ -31,7 +33,9 @@ public class ShoppingCart {
 	}
 	
 	public void pay(PaymentStrategy paymentMethod){
+		
 		int amount = calculateTotal();
+		
 		paymentMethod.pay(amount);
 	}
 }
