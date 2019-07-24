@@ -12,6 +12,7 @@ public class PC extends Computer {
 		this.ram = ram;
 		this.hdd = hdd;
 		this.cpu = cpu;
+		
 	}
 	
 	@Override

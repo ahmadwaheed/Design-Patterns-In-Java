@@ -12,4 +12,5 @@ public abstract class Computer {
 		
 		return "RAM= "+this.getRAM()+", HDD="+this.getHDD()+", CPU="+this.getCPU();
 	}
+	
 }
