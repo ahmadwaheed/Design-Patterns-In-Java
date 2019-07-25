@@ -10,10 +10,11 @@ public class Server extends Computer {
      
     public Server(String ram, String hdd, String cpu){
     	
-        this.ram=ram;
-        this.hdd=hdd;
-        this.cpu=cpu;
+        this.ram = ram;
+        this.hdd = hdd;
+        this.cpu = cpu;
     }
+    
     @Override
     public String getRAM() {
     	
