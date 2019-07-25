@@ -13,9 +13,10 @@ import java.io.ObjectOutputStream;
 public class SingletonSerializedTest {
 
     public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-        SerializedSingleton instanceOne = SerializedSingleton.getInstance();
-        ObjectOutput out = new ObjectOutputStream(new FileOutputStream(
-                "filename.ser"));
+       
+    	SerializedSingleton instanceOne = SerializedSingleton.getInstance();
+      
+    	ObjectOutput out = new ObjectOutputStream(new FileOutputStream("filename.ser"));
         out.writeObject(instanceOne);
         out.close();
         
