@@ -4,6 +4,7 @@ package com.command.design.pattern;
 public class FileSystemClient {
 
 	public static void main(String[] args) {
+		
 		//Creating the receiver object
 		FileSystemReceiver fs = FileSystemReceiverUtil.getUnderlyingFileSystem();
 		
@@ -17,10 +18,12 @@ public class FileSystemClient {
 		file.execute();
 		
 		WriteFileCommand writeFileCommand = new WriteFileCommand(fs);
+		
 		file = new FileInvoker(writeFileCommand);
 		file.execute();
 		
 		CloseFileCommand closeFileCommand = new CloseFileCommand(fs);
+		
 		file = new FileInvoker(closeFileCommand);
 		file.execute();
 	}
