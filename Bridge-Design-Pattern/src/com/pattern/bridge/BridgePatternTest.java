@@ -11,5 +11,4 @@ public class BridgePatternTest {
 		Shape pent = new Pentagon(new GreenColor());
 		pent.applyColor();
 	}
-
 }
